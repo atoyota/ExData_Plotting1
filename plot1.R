@@ -1,6 +1,4 @@
 # download data file from the internet and and unzip it under "data" subfolder
-# set the current working directory to "ExploratoryData" subdir if it it is at
-# setwd('./ExploratoryData')
 if(!file.exists('data')) dir.create('data')
 fileUrl <- 'https://d396qusza40orc.cloudfront.net/exdata%2Fdata%2Fhousehold_power_consumption.zip'
 download.file(fileUrl, destfile = './data/household_power_consumption.zip')
